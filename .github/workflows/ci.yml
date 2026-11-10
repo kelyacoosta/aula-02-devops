@@ -13,4 +13,4 @@ jobs:
           echo "Todos os arquivos foram carregados no Runner!"
 
       - name: Validar sintaxe do HTML
-        run: npx htmlhint index.html
+        run: npx htmlhint "**/*.html"
