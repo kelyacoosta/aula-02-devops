@@ -11,3 +11,8 @@ jobs:
         run: |
           ls -R
           echo "Todos os arquivos foram carregados no Runner!"
+
+      - name: Validar sintaxe do HTML
+        uses: htmlhint/htmlhint-action@v2
+        with:
+          target_pattern: 'index.html'
